@@ -8,7 +8,7 @@ public class Calculator {
         return memory;
     }
 
-    public void setMemory(int memory) {
+    public synchronized void setMemory(int memory) {
         Calculator.this.memory = memory;
 
         try {
