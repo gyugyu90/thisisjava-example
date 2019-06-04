@@ -17,5 +17,21 @@ public class MyFunctionalInterfaceExample {
 
         fi = () -> System.out.println("method call3");
         fi.method();
+
+        MyFunctionalInterfaceWithParams fip;
+        fip = (x) -> {
+            int result = x * 5;
+            System.out.println(result);
+        };
+        fip.method(2);
+
+        fip = (x) -> {
+            System.out.println(x * 5);
+        };
+        fip.method(2);
+
+        fip = x -> System.out.println(x * 5);
+        fip.method(2);
+
     }
 }
